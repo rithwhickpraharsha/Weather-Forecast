@@ -11,7 +11,7 @@ export default function Dashboard(){
     const [load,setLoad] = useState(true);
     useEffect(()=>{
   async function defaultLoc(){
-    const res = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=297a9db8c3b04c099ad184801242603&q=India&days=10`);
+    const res = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=297a9db8c3b04c099ad184801242603&q=India&days=10`);
     console.log(res.data);
     setWeather(res.data);
     setLoad(false)
@@ -22,7 +22,7 @@ export default function Dashboard(){
     },[])
     async function FetchDetails(){
         try{
-        const res = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=297a9db8c3b04c099ad184801242603&q=${city}&days=10`);
+        const res = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=297a9db8c3b04c099ad184801242603&q=${city}&days=10`);
         console.log(res.data);
         setWeather(res.data);
         setLoad(false);
