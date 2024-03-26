@@ -43,7 +43,7 @@ export default function Dashboard(){
         <div className="flex flex-col justify-center items-center w-screen">
         <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6gr0AvEyE9ux6amA3L0xeU0SEYbxJZNFCjQ&usqp=CAU" />
       
-        <input type ='text' className = "h-10 w-1/3 rounded-md" placeholder="      Enter the Location   " onChange={(e)=>{setCity(e.target.value)}}/>
+        <input type ='text' className = "h-10 w-1/3 rounded-md" placeholder=" Enter the Location   " onChange={(e)=>{setCity(e.target.value)}}/>
         <button className="bg-green-500 rounded-md p-2 mt-3" onClick={()=>{FetchDetails();setShowInfo(true)}}>search</button>
          <div className="text-3xl text-white mt-5">{weather.location.name}</div>
         {(!load && showInfo) ? 
