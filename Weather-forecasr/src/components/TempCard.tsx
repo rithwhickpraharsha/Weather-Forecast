@@ -21,10 +21,10 @@ return(
         </div>
         <div className="text-2xl mb-4 flex  font-semibold ml-3 ">
         🔥 {temp} 
-        <div className="text-xl flex justify-center items-center ml-2">({mintemp} | {maxtemp})</div>
-        <button className=" mx-2 hover:underline " onClick={()=>{setTemp(forecast.day.avgtemp_c);setMaxtemp(forecast.day.maxtemp_c);setMintemp(forecast.day.mintemp_c);}}>C</button>
+        <div className="text-xl flex justify-center items-center lg:ml-2">({mintemp} | {maxtemp})</div>
+        <button className=" lg:mx-2 hover:underline " onClick={()=>{setTemp(forecast.day.avgtemp_c);setMaxtemp(forecast.day.maxtemp_c);setMintemp(forecast.day.mintemp_c);}}>C</button>
         |
-        <button className=" mx-2 hover:underline" onClick={()=>{setTemp(forecast.day.avgtemp_f);setMaxtemp(forecast.day.maxtemp_f);setMintemp(forecast.day.mintemp_f);}}>F</button>
+        <button className=" lg:mx-2 hover:underline" onClick={()=>{setTemp(forecast.day.avgtemp_f);setMaxtemp(forecast.day.maxtemp_f);setMintemp(forecast.day.mintemp_f);}}>F</button>
             
         </div>
         
