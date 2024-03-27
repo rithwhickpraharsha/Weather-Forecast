@@ -42,6 +42,11 @@ const MyChart: React.FC<ChartProps> = ({ labels, data, label }) => {
           },
         },
       },
+tooltips: {
+    enabled: true,
+    mode: 'index',
+    intersect: false,
+  },    
     maintainAspectRatio: false,
     responsive: true,
   };
