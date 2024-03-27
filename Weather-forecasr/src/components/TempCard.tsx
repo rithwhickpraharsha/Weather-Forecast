@@ -11,7 +11,7 @@ return(
         <div>
          
         <div className="text-2xl flex  font-semibold">
-        <div className="mx-4">📆</div> {forecast.date}
+        <div className="mx-4">🗓️</div> {forecast.date}
         </div>
         </div>
         <div className="flex  items-center">
