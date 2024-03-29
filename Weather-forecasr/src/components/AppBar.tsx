@@ -5,6 +5,7 @@ import { UserData } from "../StateManagement/userinfo"
 
 export default function AppBar(){
     const userData = useRecoilValue(UserData);
+    const screenWidth = window.innerWidth;
     return(
         <div className="flex items-center justify-between  bg-gray-500 shadow-md rounded-md">
             <div className="text-xl ml-3 font-semibold text-white font-serif">ApplyIn.co</div>
